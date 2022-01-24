@@ -2,7 +2,7 @@
 
 ________
 # UX - 
-<img src=![ScreenShot]('/Users/dreamzavenue/takehomeaccess/fetchreward-takehome/src/images/fetchrewardform.JPG') alt="picture of form roadmap">
+<img src=('/Users/dreamzavenue/takehomeaccess/fetchreward-takehome/src/images/fetchrewardform.JPG') alt="picture of form roadmap">
 
 ________
 # THINGS I ASKED MYSELF
