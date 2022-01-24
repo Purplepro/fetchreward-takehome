@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import './App.css';
+import './App.scss';
 import UserCreatePage from './pages/UserCreationPage';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path="/createuser" element={<UserCreatePage/>}/>
+          <Route exact path="/" element={<UserCreatePage/>}/>
         </Routes>
       </Router>
       

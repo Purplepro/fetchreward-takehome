@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.user-creation-form {
+ display: flex;
+ flex-direction: column;
+ width: 30vw;
+ gap: 30px;
+ margin: auto;
+
+}
+.user-creation-form input {
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  width: 20vw;
+  border-bottom: 1px solid rgb(172, 172, 172);
+  color: black;
+  background-color: transparent;
+  margin: auto;
+  outline: none;
+}
+
+#occupation-option {
+  width: 11vw;
+}
+
+#state-option {
+  width: 9vw;
+}
+
+.form-select-option {
+  border: none;
+  border-bottom: 1px solid rgb(122, 122, 122);
+  outline: none;
+  // font-size: 15px;
+}
+
+.option-select-container {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+
+.user-creation-form label {
+  color: rgb(43, 43, 43);
+  font-size: 20px;
+  margin-right: 13vw;
+}
+
+
+.user-creation-form button {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 5px 10px 5px;
+  background-color: rgb(28, 28, 255);
+  border: none;
+  width: 21vw;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  color: white;
+  transition: 0.2s ease-in;
+}
+
+.user-creation-form button:hover {
+  background-color: rgb(55, 55, 255);
+}
+
+.user-create-form-container {
+  background-color: white;
+  width: 30vw;
+  padding: 40px 5px 40px 5px;
+  margin: 40vh auto;
+  border-radius: 1.5em;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1), 0 2px 20px 2px rgba(0, 0, 0, 0.19);
+}
+
+#user-creation-successful {
+  color: rgb(7, 126, 22);
+  background-color: lightgreen; 
+  border: 1px solid rgb(22, 100, 6); 
+  height: '5vh'; 
+  margin: 10px auto; 
+  padding: 20px;
+  border-radius: 5px;
+  width: 15vw;
+  font-size: 2.5vh;
+  font-weight: 400;
+}
