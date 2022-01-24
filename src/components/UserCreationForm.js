@@ -3,7 +3,8 @@ import Axios from "axios";
 import Options from "./FieldOptions";
 
 function UserCreationForm() {
-  const [state, setState] = useState({
+  const [state, setState] = useState({ // I felt it wasn't clean or effecient 
+    //to create different states for each input field so I made one state containing keys that are states
     fullName: "",
     email: "",
     password: "",
@@ -49,8 +50,9 @@ function UserCreationForm() {
     )
       .then((response) => {
         console.log(response.data);
-        console.log(`${200} OK`);
-        setIsSuccessful(true);
+        console.log(`${200} OK`); //letting the user know that we the error code is 200 which means its successful
+        setIsSuccessful(true); //setting my successful state to true so when the user successfully 
+        //creates their account a popup shows up to to give the user feedback on the success of their user creation
       })
       .catch((error) => {
         console.log(error);
@@ -59,20 +61,23 @@ function UserCreationForm() {
 
   return (
     <div className="user-create-form-container">
-      <form onSubmit={handleSubmit} className="user-creation-form">
+      
+      <form onSubmit={handleSubmit}  //this onSubmit allows us to submit form data to whichever api we wish to submit data to
+      className="user-creation-form"
+      >
         <label>Create user</label>
-        {isSuccessful === true ? (
+        {isSuccessful === true ? ( //I am using a tinary operator to say if the state of isSuccessful is true then we want our span tag to pop out if not the false
           <span id="user-creation-successful">user creation successful!</span>
         ) : (
           false
         )}
         <input
-          type="text"
-          name="fullName"
-          value={state.fullName}
-          onChange={handleChange}
-          placeholder="Full name"
-          required
+          type="text" //tells the input what type characters will inputted into this field
+          name="fullName" //
+          value={state.fullName} //assign our state.FullName to the inputs value
+          onChange={handleChange} //this allows React to detect when the value of our input element changes
+          placeholder="Full name" //telling the user name which information into into the field
+          required //this a html attribute which makes it so that the user is requried to fill out this field
         />
         <input
           type="text"
